@@ -12,7 +12,6 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   gif: ^2.3.0
-  convex_bottom_bar: ^3.2.0
 
 dev_dependencies:
   flutter_test:
@@ -45,12 +44,6 @@ flutter:
     - assets/icons/loading2.gif
     - assets/icons/black_loading.gif
     - assets/icons/success2.gif
-    - assets/icons/calender.png
-    - assets/icons/fees.png
-    - assets/icons/grievance.png
-    - assets/icons/staff leave.png
-    - assets/icons/notice.png
-    - assets/icons/.pnprofileg
 
   uses-material-design: true
 

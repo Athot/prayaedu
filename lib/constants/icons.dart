@@ -1,6 +1,6 @@
 class AppImages {
   // static const String successIcon = 'assets/icons/add_icon.png';
-  static const String arrow = 'assets/icons/arrow.png';
+  static const String arrow = 'assets/icons/assets/icons/arrow.png';
   static const String check = 'assets/icons/check.png';
   static const String checkmark = 'assets/icons/checkmark.png';
   static const String cross = 'assets/icons/cross.png';
@@ -23,15 +23,8 @@ class AppImages {
   static const String loading_gif = 'assets/icons/loading.gif';
   static const String loading_gif2 = 'assets/icons/loading2.gif';
   static const String black_loading = 'assets/icons/black_loading.gif';
-  static const String success2 = 'assets/icons/success2.gif';
 
-  // dashboard icons
-  static const String calender = 'assets/icons/calender.png';
-  static const String fees = 'assets/icons/fees.png';
-  static const String grievance = 'assets/icons/grievance.png';
-  static const String staff_leave = 'assets/icons/staff leave.png';
-  static const String notice = 'assets/icons/notice.png';
-  static const String profile = 'assets/icons/profile.png';
+  static const String success2 = 'assets/icons/success2.gif';
 }
 
 

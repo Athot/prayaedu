@@ -25,7 +25,7 @@ class _OtpSuccessPageState extends State<OtpSuccessPage>
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: null,
-      backgroundColor: AppColors.bottomBar,
+      backgroundColor: AppColors.header,
       body: Column(
         children: [
           SizedBox(height: screenHeight * 0.15),
@@ -62,7 +62,7 @@ class _OtpSuccessPageState extends State<OtpSuccessPage>
               children: [
                 Text(
                   "Successful",
-                  style: TextStyle(color: AppColors.search, fontSize: 40),
+                  style: TextStyle(color: AppColors.search, fontSize: 16),
                 ),
                 SizedBox(
                   width: screenWidth * 0.02,
@@ -75,31 +75,43 @@ class _OtpSuccessPageState extends State<OtpSuccessPage>
               ],
             ),
           ),
-          SizedBox(
-            height: screenHeight * 0.02,
-          ),
           Center(
-            child: Text(
-              "Your OTP has received Successfully",
-              style: TextStyle(fontSize: 20),
-            ),
+            child: Text("Your OTP has received Successfully"),
           ),
           SizedBox(
-            height: screenHeight * 0.1,
+            height: screenHeight * 0.5,
           ),
-          Center(
-            child: ElevatedButton(
+          Expanded(
+            child: Center(
+              child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.header,
-                    padding: EdgeInsets.symmetric(
-                        horizontal: screenWidth * 0.10, vertical: 15),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20))),
-                child: Text(
-                  "Verify",
-                  style: TextStyle(color: AppColors.search, fontSize: 20),
-                )),
+                  backgroundColor: Colors.white,
+                  padding: EdgeInsets.symmetric(
+                    horizontal: screenWidth * 0.10,
+                    vertical: 15,
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Text(
+                      "Verify",
+                      style: TextStyle(color: Colors.black, fontSize: 20),
+                    ),
+                    SizedBox(width: screenWidth * 0.05),
+                    Image.asset(
+                      AppImages.add_icon,
+                      width: 25,
+                      height: 30,
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ),
         ],
       ),
